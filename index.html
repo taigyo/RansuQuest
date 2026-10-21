@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ランスークエスト！</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section id="stage">
+    <h1 class="glitch" data-t="ランスークエスト！">ランスークエスト！</h1>
+    <div class="arena">
+      <div class="unit"><div class="say" id="say-me"></div><div class="chr">🤺</div><div class="val" id="v-me">000</div><div class="nm">キミ</div></div>
+      <div class="goal">
+        <svg class="lance" viewBox="0 0 120 24" aria-hidden="true"><rect x="4" y="10" width="86" height="4" rx="2" fill="#c98a4b"/><polygon points="90,4 118,12 90,20" fill="#ffd23f"/><circle cx="14" cy="12" r="5" fill="#ff4fd8"/></svg>
+        <div class="gl">伝説のランス</div><div class="val tgt" id="v-t">000</div>
+      </div>
+      <div class="unit rival"><div class="say" id="say-cpu"></div><div class="chr">👹</div><div class="val" id="v-cpu">000</div><div class="nm">ライバル</div></div>
+    </div>
+  </section>
+  <section id="chests"></section>
+</main>
+<div id="ov"><div class="card">
+  <h2 id="ot">ランスークエスト！</h2>
+  <p id="op">宝箱を開けて自分の数字を書き換え、中央の数字にぴったり合わせよう。先に合わせた方が「伝説のランス」を手に入れる。宝箱は10秒で消える。キーボードの1〜6でも取れる。</p>
+  <label>はじめの数字（空欄ならランダム）<input id="seed" inputmode="numeric" maxlength="3" placeholder="000〜999"></label>
+  <button id="go">冒険に出る</button>
+</div></div>
+<script src="game.js"></script>
+</body>
+</html>
